@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ana Sayfa-Netflix</title>
+    <style>
+      .parent {
+        position: relative;
+        top: 0;
+        left: 0;
+      }
+
+      .background {
+        width: 100%;
+        height: 1000%;
+        top: 0;
+        left: 0;
+        position: relative;
+      }
+      .background1 {
+        position: absolute;
+        top: 100px;
+        left: 50px;
+        width: 32%;
+        height: 32%;
+      }
+
+      .background3 {
+        position: absolute;
+        top: 330px;
+        left: 30px;
+      }
+
+      .oynat {
+        width: 9%;
+        height: 5%;
+        font-family: "Arial";
+        border-radius: 5px;
+        position: absolute;
+        top: 430px;
+        left: 50px;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        border: none;
+      }
+
+      .extra {
+        width: 16%;
+        height: 5%;
+        font-family: "Arial";
+        border-radius: 3px;
+        position: absolute;
+        top: 430px;
+        left: 190px;
+        font-weight: bold;
+        font-size: 15px;
+        background-color: rgb(128, 128, 128);
+        color: white;
+        cursor: pointer;
+        border: none;
+        opacity: 10px;
+      }
+
+      .thumbnails {
+        width: 250px;
+        height: 200px;
+        object-fit: contain;
+        object-position: center;
+        border: none;
+        margin-left: 10px;
+        margin-top: -5px;
+      }
+
+      .video-title {
+        font-size: 17px;
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        margin-left: 10px;
+      }
+
+      .bar {
+        font-size: 16px;
+        color: white;
+        font: bold;
+        font-family: Calibri;
+        margin: 10px;
+        position: inherit;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .account-dropdown-button {
+        display: inline-block;
+        margin: 10px;
+      }
+
+      .search {
+        width: 100px;
+      }
+
+      .logo2 {
+        width: 100px;
+        display: inline-block;
+      }
+
+      .img {
+        width: 25px;
+        left: 8px;
+        top: 50%;
+        display: inline-block;
+        margin-left: 360px;
+        border-color: none;
+      }
+
+      .bell {
+        width: 25px;
+        left: 8px;
+        top: 50%;
+        display: inline-block;
+      }
+    </style>
+    <div class="bar">
+      <img class="logo2" src="thumbnails/logoo.png" />
+      <p class="bar">Ana Sayfa</p>
+      <p class="bar">Diziler</p>
+      <p class="bar">Filmler</p>
+      <p class="bar">Yeni ve Popülerler</p>
+      <p class="bar">Listem</p>
+      <p class="bar">Dile Göre Gözat</p>
+
+      <img
+        class="img"
+        src="https://static.vecteezy.com/system/resources/previews/000/442/657/non_2x/vector-search-icon.jpg"
+        alt=""
+      />
+      <input type="text" class="search" />
+
+      <p class="bar">Beyza</p>
+      <img class="bell" src="thumbnails/bell.png" />
+      <div class="account-dropdown-button">
+        <a
+          href="/YourAccount"
+          role="button"
+          tabindex="0"
+          aria-haspopup="true"
+          aria-expanded="false"
+          aria-label="Furkan - Hesap ve Ayarlar"
+          ><span class="profile-link" role="presentation"
+            ><img
+              class="profile-icon"
+              src="https://occ-0-2774-2773.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABY20DrC9-11ewwAs6nfEgb1vrORxRPP9IGmlW1WtKuaLIz8VxCx5NryzDK3_ez064IsBGdXjVUT59G5IRuFdqZlCJCneepU.png?r=229"
+              alt="" /></span></a
+        ><span class="caret" role="presentation"></span>
+      </div>
+    </div>
+
+    <body>
+      <body style="background-color: rgb(22, 22, 22)"></body>
+
+      <div class="parent">
+        <img class="background" src="thumbnails/background.webp" />
+        <img class="background1" src="thumbnails/background1.webp" />
+        <img
+          class="background3"
+          src="thumbnails/Screenshot_1-removebg-preview.png"
+        />
+        <button class="oynat">▶ Oynat</button>
+        <button class="extra">&#x21; Daha Fazla Bilgi</button>
+      </div>
+
+      <div class="video-preview">
+        <h1 class="video-title">Netflix IMDb Sıralamalı Filmler ve Diziler</h1>
+        <img
+          class="thumbnails"
+          src="https://occ-0-2774-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZMn9JAboEIXRmQBrZXXT7WdqJCyyD11KsXEw4_vcJNZZ9PWvUreajI_mvVTAJp6gzG047jShxe5kktAEjQyiHoVj1loqplx9O4.webp?r=226"
+          alt=""
+        />
+        <img
+          class="thumbnails"
+          src="https://occ-0-2774-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQ4qXqkJY9r9dc9YO8LZr4Eu0tbwAXVzYe_no1vSV8KIXLwMJRS-AW3AU_KSh0s9ozDBTLM2wBmdTDf-2T2v-BJTiBKFZ7FMiy8.webp?r=945"
+          alt=""
+        />
+        <img
+          class="thumbnails"
+          src="https://occ-0-2774-2773.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYUWzbPGVLxkpAQKGhV1aoy-wcHgFCjmBDwinue_D9TiOn5_mRRcilbEOd2h_D8wLGbBQDq0hdh3s23oS2T4_UfIrMSAkMzqlpkHwJNF2-Y1jGO_v8z1-mofqDNlOXMYnCvP.jpg?r=13f"
+          alt=""
+        />
+        <img class="thumbnails" src="thumbnails/netflix4.jpg" />
+        <img class="thumbnails" src="thumbnails/netflix5.jpg" />
+      </div>
+
+      <div class="video-preview">
+        <h1 class="video-title">Gündemdekiler</h1>
+        <img class="thumbnails" src="thumbnails/netflix1.jpg" />
+        <img class="thumbnails" src="thumbnails/netflix2.webp" />
+        <img class="thumbnails" src="thumbnails/netflix3.webp" />
+        <img class="thumbnails" src="thumbnails/netflix6.jpg" />
+        <img class="thumbnails" src="thumbnails/netflix7.webp" />
+      </div>
+
+      <div class="video-preview">
+        <h1 class="video-title">En Çok Arananlar</h1>
+        <img
+          class="thumbnails"
+          src="thumbnails/AAAABbd2eba5SSucWluLcjMcxO24bJ-NXQ1804Kh-DYRzaih37ofn0Se23lJ41pQlZBwaInwEHG_VVjsVaujKaRIXTZzhwdUk4onrdU.webp"
+        />
+
+        <img
+          class="thumbnails"
+          src="thumbnails/AAAABc_V78MTJmz7Y_b1DRAf5y29YoEKX6GoVdEF8aPFT1CqZXpVwUzSuOOo3pBdlK4VyDwuli99ddm_hko9XSwnNp6XE69TA542kajoPd4hmspJDyMT8VZwBsRzDz2JH_tpHH3T.jpg"
+        />
+
+        <img
+          class="thumbnails"
+          src="thumbnails/AAAABUK2ZM9yUCBQa50XFB4LDve9xZG_ghwJplAhA5XbchTQyU7TSTNhWiR_1Za1wn0hBgwvulFaPOUwfRjrqiLoV41RkB3fu44Vtsk.webp"
+        />
+
+        <img
+          class="thumbnails"
+          src="thumbnails/AAAABV_nNZ8N852xHrnG_TSDdXzNWNpKuXAtm5cmu7H-xU4hWaegwwolcjcu47ajEWl7buk_411FjyAu4MZJLOhFeQFnspXgr1yoFg8.webp"
+        />
+
+        <img
+          class="thumbnails"
+          src="thumbnails/AAAABVbJ62bvzcv456jSCykgqx4mgfosMZ7UsXwXMRN-Fz_2L4ysGmosix1PpCiBf-xUWOfAa2VO1GUuG-XennklIpr72wlZB0QwwXQpSDiaPZN6jTT4ZenvRvnU911cxi87Vooh.jpg"
+        />
+      </div>
+
+      <div class="video-preview">
+        <h2 class="video-title">Beyza,İzlemeye Devam Et</h2>
+        <img class="thumbnails" src="thumbnails/netflix1.jpg" />
+        <img class="thumbnails" src="thumbnails/netflix2.webp" />
+        <img class="thumbnails" src="thumbnails/netflix3.webp" />
+        <img class="thumbnails" src="thumbnails/netflix6.jpg" />
+        <img class="thumbnails" src="thumbnails/netflix7.webp" />
+      </div>
+    </body>
+  </head>
+</html>
